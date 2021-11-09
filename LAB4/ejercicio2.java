@@ -1,7 +1,7 @@
 public class ejercicio2 {
     public static void main(String[] args) {
         int[]array = {4,5,6,2,7,8,9};
-      
+        every_other(array);
     }
     
     //ejercicio2
