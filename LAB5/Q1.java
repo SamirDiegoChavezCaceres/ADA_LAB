@@ -1,5 +1,9 @@
+public static void main(String[] args) {
+	q1();
+    }
 public static void q1() {
-	for (i = 0; i < n; i++) {
+	int n = 10;
+	for (int i = 0; i < n; i++) {
 		System.out.println(i+" Lineal");
 	}
 }
