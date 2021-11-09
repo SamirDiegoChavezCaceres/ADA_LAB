@@ -1,5 +1,10 @@
+//Revisando tiempo computacional
+//Q9
+public static void main(String[] args) {
+	q9();
+}
 public static void q9() {	
-	for (i = 0; i * i < n; i++) {
+	for (int i = 0; i * i < n; i++) {
 		System.out.println(i+" raiz cuadrada");
 	}
 }
