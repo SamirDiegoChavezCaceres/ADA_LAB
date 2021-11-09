@@ -1,6 +1,7 @@
 public class ejercicio3 {
     public static void main(String[] args) {
         int[]array = {4,5,6,2,7,8,9};
+        System.out.println(twoSum(array));
     }
   
     //ejercicio3
