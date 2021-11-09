@@ -1,3 +1,5 @@
+//Revisando tiempo computacional
+//Q1
 public static void main(String[] args) {
 	q1();
     }
