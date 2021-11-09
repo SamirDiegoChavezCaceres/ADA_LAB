@@ -1,6 +1,12 @@
-public static void q6() {	
+//Revisando tiempo computacional
+//Q6
+public static void main(String[] args) {
+	q6();
+}
+public static void q6() {
+	int n = 10;
 	p = 0
-	for (i = 1; p <= n; i++) {
+	for (int i = 1; p <= n; i++) {
 		p = p + i;
 		System.out.println(i+";"+p+"  raiz cuadrada");
 	}
