@@ -1,6 +1,12 @@
+//Revisando tiempo computacional
+//Q5
+public static void main(String[] args) {
+	q5();
+}
 public static void q5() {	
-	for (i = 0; i < n; i++) {
-		for (j = 0; j < i; j++) {
+	int n = 0;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < i; j++) {
 			System.out.println(i+" "+j+"   Cuadratico");
 		}
 	}
