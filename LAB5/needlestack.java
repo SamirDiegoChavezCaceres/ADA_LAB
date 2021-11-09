@@ -1,3 +1,8 @@
+//Revisando tiempo computacional
+//PICK NEEDLE
+public static void main(String[] args) {
+	find_needle("cadabra","abracadabra");
+}
 //pick_neddle esta en el lab anterior se copia lo que envie
 //Dado dos strings busca si needle esta dentro de la cadena haystack
     public static boolean find_needle(String needle, String haystack){ //O(n*m) donde n es la longitud de needle y
