@@ -1,5 +1,7 @@
 //Revisando tiempo computacional
 //PICK NEEDLE
+package LAB5;
+public class needlestack {
 public static void main(String[] args) {
 	find_needle("cadabra","abracadabra");
 }
@@ -24,3 +26,4 @@ public static void main(String[] args) {
         }
         return false;
     }
+}

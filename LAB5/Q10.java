@@ -1,5 +1,7 @@
 //Revisando tiempo computacional
 //Q10
+package LAB5;
+public class Q10 {
 public static void main(String[] args) {
 	q10();
     }
@@ -12,5 +14,6 @@ public static void q10() {
 	for (int j = 0; j < n; j++) {
 		System.out.println(j+" Lineal");
 	}
+}
 }
 //Ambos son n, tomamos el mayor O(n)

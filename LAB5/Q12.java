@@ -1,5 +1,7 @@
 //Revisando tiempo computacional
 //Q12
+package LAB5;
+public class Q12 {
 public static void main(String[] args) {
 	q12();
 }
@@ -10,5 +12,6 @@ public static void q12() {
 			System.out.println(j+" n log");
 		}
 	}
+}
 }
 //el primero es n y el segundo es log n, multiplicando O(nlog(n))

@@ -2,23 +2,26 @@
 //O(log_2(n))
 //Revisando tiempo computacional
 //PICK RESUME
+package LAB5;
+public class pickresume {
 public static void main(String[] args) {
-	pick_resume("hello");
+	System.out.println(pick_resume("hello"));
 }
 public static String pick_resume(String resumes){
     String eliminate = "top";
     
-    while (resumes.length > 1){
+    while (resumes.length() > 1){
         if (eliminate.equals("top")) {
-            resumes = resumes.substring(resumes.length / 2, resumes.length - 1);
+            resumes = resumes.substring(resumes.length() / 2, resumes.length() - 1);
             eliminate = "bottom";
         }
-        else if (eliminate == ("bottom")) {
-            resumes = resumes.substring(0, resumes.length / 2);
+        else if (eliminate.equals("bottom")) {
+            resumes = resumes.substring(0, resumes.length() / 2);
             eliminate = "top";
         }
     }
-    return resumes[0];
+    return resumes;
+}
 }
 //reduce la cadena en la mitad hasta llega a 1 caracter
 //Se esta reduciendo a la mitad la condicion en cada iteracion y empezados desde n que es

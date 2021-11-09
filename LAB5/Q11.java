@@ -1,5 +1,7 @@
 //Revisando tiempo computacional
 //Q11
+package LAB5;
+public class Q11 {
 public static void main(String[] args) {
 	q11();
     }
@@ -15,5 +17,6 @@ public static void q11() {
 	for (int j = 1; j < p; j = j * 2) {
 		System.out.println(j+" Log de log");
 	}
+}
 }
 //por lo que en este caso la complejidad seria O(log(log(n)))
