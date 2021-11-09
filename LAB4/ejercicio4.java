@@ -1,6 +1,7 @@
 public class ejercicio4 {
     public static void main(String[] args) {
         int[]array = {4,5,6,2,7,8,9};
+        System.out.println("cadabra","abracadabra");
     }
     //ejercicio4
     //Dado dos strings busca si needle esta dentro de la cadena haystack
