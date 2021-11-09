@@ -1,6 +1,10 @@
-# 5. What is the time complexity in terms of O()?
-O(log_2(n))
-
+// 5. What is the time complexity in terms of O()?
+//O(log_2(n))
+//Revisando tiempo computacional
+//PICK RESUME
+public static void main(String[] args) {
+	pick_resume("hello");
+}
 public static String pick_resume(String resumes){
     String eliminate = "top";
     
