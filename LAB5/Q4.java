@@ -1,6 +1,12 @@
+//Revisando tiempo computacional
+//Q4
+public static void main(String[] args) {
+	q4();
+}
 public static void q4() {	
-	for (i = 0; i < n; i++) {
-		for (j = 0; j < n; j++) {
+	int n = 0;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
 			System.out.println(i+";"+j+"  Cuadratico");
 		}
 	}
