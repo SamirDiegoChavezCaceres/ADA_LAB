@@ -1,5 +1,11 @@
+//Revisando tiempo computacional
+//Q8
+public static void main(String[] args) {
+	q8();
+}
 public static void q8() {	
-	for (i = n; i >= 1; i = i/2) {
+	int n = 10;
+	for (int i = n; i >= 1; i = i/2) {
 		System.out.println(i+" Log en base 2");
 	}
 }
