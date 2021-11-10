@@ -9,21 +9,23 @@ package LAB6;
  *
  * @author Usuario
  */
-public class BinarySearch {
+//Ejercicio2
+//Señala el primer mayor elemento respecto a un numero
+public class Ejercicio2 {
     public static void main(String[] args){
         int[]a = {5,12,17,23,38,45,77,84,90};
-        System.out.println(busquedaBinaria(12, a));
+        System.out.println(busquedaBinariaPrimerMayor(11, a));
     }
-    public static int busquedaBinaria(int target, int[]array){
+    public static int busquedaBinariaPrimerMayor(int target, int[]array){
         int L = 0;
         int R = array.length - 1;
-        int mid = 0;
+        int mid;
         while(L <= R){
             mid = L + ((R-L)/2);
             if(array[mid] == target)
-                return mid;
-            if(array[mid] < target)
-                L = mid + 1;
+                return mid + 1;
+            if(array[mid] < target) //Solo se busca en los menores hasta llegar al menor del numero indicado
+                return mid + 1;
             else
                 R = mid - 1;
         }
