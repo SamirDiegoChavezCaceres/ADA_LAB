@@ -23,7 +23,7 @@ public class DFS_Iterative {
         DFS_iterative(a, 1, 1, 1+";"+1);
         for (String[] a1 : a) {
             for (String item : a1) {
-                System.out.print(item+"/-/");
+                System.out.print(item+"/");
             }
             System.out.println();
         }
@@ -32,14 +32,14 @@ public class DFS_Iterative {
     }
     public static void DFS_iterative(String[][]tablero, int x, int y, String ant){
         Stack<String> stack = new Stack<>();
-        stack.add(x+";"+y);
-        tablero[y][x] = "v"+"("+ant+")";
+        stack.add(x+"1"+y);
+        tablero[y][x] = "1";
         while (!stack.isEmpty()){
             String v = stack.lastElement();
             System.out.println(v);
             stack.pop();
             String[] coorde = coordString(v.charAt(0), v.charAt(2));
-            tablero[v.charAt(2)-48][v.charAt(0)-48] = "v("+ant+")"; //marca como visitado
+            tablero[v.charAt(2)-48][v.charAt(0)-48] = "1"; //marca como visitado
             ant = (v.charAt(0)-48)+";"+(v.charAt(2)-48);
             for(String str : coorde){
                 int tempX = str.charAt(0) - 48;

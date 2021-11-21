@@ -19,10 +19,10 @@ public class DFSrecursivo {
                         {"#","0","0","0","0","#"},
                         {"#","0","0","0","#","0"},
                         {"#","#","#","#","0","0"}};
-        DFS_recursive(a, 1, 1, 1+";"+1);
+        DFS_recursive(a, 1, 1, "1");
         for (String[] a1 : a) {
             for (String item : a1) {
-                System.out.print(item+"/-/");
+                System.out.print(item+"/");
             }
             System.out.println();
         }
@@ -30,7 +30,7 @@ public class DFSrecursivo {
         //que el padre de este nodo es el nodo 1,1
     }
     public static void DFS_recursive(String[][]tablero, int x, int y, String ant){
-        tablero[y][x] = "v("+ant+")";
+        tablero[y][x] = "1";
         String[] coorde = coordString(x, y);
         for(int i = 0; i<coorde.length ; i++){
             int tempX = coorde[i].charAt(0) - 48;
@@ -39,8 +39,8 @@ public class DFSrecursivo {
             System.out.println(coorde[i]);
             if(tempX >= 0 && tempY >= 0 && tempX < tablero[0].length && tempY < tablero.length){
                 if(tablero[tempY][tempX].charAt(0) == '0'){
-                    tablero[tempY][tempX] = "v("+x+";"+y+")";
-                    DFS_recursive(tablero, tempX, tempY, x+";"+y);
+                    tablero[tempY][tempX] = "1";
+                    DFS_recursive(tablero, tempX, tempY, "1");
                 }
             }
         }
