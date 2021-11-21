@@ -22,7 +22,6 @@ public class busquedaBinariaGreatest {
         int mid;
         while(L <= R){
             mid = L + ((R-L)/2);
-            System.out.println(mid);
             if(array[mid] == target)
                 return mid + 1;
             if(array[mid] < target) //Solo se busca en los menores hasta llegar al menor del numero indicado
