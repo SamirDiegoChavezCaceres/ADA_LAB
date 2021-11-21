@@ -11,7 +11,7 @@ package LAB6;
  */
 //Ejercicio1
 //Señaal si un numero es un cuadrado perfecto
-public class Ejercicio1 {
+public class busquedaBinariaSqrt {
     public static void main(String[] args){
         System.out.println(busquedaBinariaCuadrado(16));
         System.out.println(busquedaBinariaCuadrado(20));
