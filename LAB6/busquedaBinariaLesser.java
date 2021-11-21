@@ -11,7 +11,7 @@ package LAB6;
  */
 //Ejercicio3
 //Busca el menor numero en un arreglo desplazado
-public class Ejercicio3 {
+public class busquedaBinariaLesser {
     public static void main(String[] args){
         int[]b = {45,77,84,90,5,12,17,23,38};
         System.out.println(busquedaBinariaMenorDesplazado(b));
