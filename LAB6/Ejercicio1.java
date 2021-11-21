@@ -13,7 +13,6 @@ package LAB6;
 //Señaal si un numero es un cuadrado perfecto
 public class Ejercicio1 {
     public static void main(String[] args){
-        int[]a = {5,12,17,23,38,45,77,84,90};
         System.out.println(busquedaBinariaCuadrado(16));
         System.out.println(busquedaBinariaCuadrado(20));
     }
