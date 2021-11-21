@@ -14,7 +14,7 @@ package LAB6;
 public class Ejercicio2 {
     public static void main(String[] args){
         int[]a = {5,12,17,23,38,45,77,84,90};
-        System.out.println(busquedaBinariaPrimerMayor(11, a));
+        System.out.println(busquedaBinariaPrimerMayor(22, a));
     }
     public static int busquedaBinariaPrimerMayor(int target, int[]array){
         int L = 0;
@@ -22,10 +22,14 @@ public class Ejercicio2 {
         int mid;
         while(L <= R){
             mid = L + ((R-L)/2);
+            System.out.println(mid);
             if(array[mid] == target)
                 return mid + 1;
             if(array[mid] < target) //Solo se busca en los menores hasta llegar al menor del numero indicado
-                return mid + 1;
+                if(array[mid + 1] > target)
+                    return mid + 1;
+                else
+                    L = mid + 1;
             else
                 R = mid - 1;
         }
