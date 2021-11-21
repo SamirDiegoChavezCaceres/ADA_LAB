@@ -11,7 +11,7 @@ package LAB6;
  */
 //Ejercicio2
 //Señala el primer mayor elemento respecto a un numero
-public class Ejercicio2 {
+public class busquedaBinariaGreatest {
     public static void main(String[] args){
         int[]a = {5,12,17,23,38,45,77,84,90};
         System.out.println(busquedaBinariaPrimerMayor(22, a));
