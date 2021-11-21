@@ -1,11 +1,11 @@
-public class ejercicio4 {
+public class find_needle {
     public static void main(String[] args) {
         int[]array = {4,5,6,2,7,8,9};
-        System.out.println(find_needle("cadabra","abracadabra"));
+        System.out.println(find_needle1("cadabra","abracadabra"));
     }
     //ejercicio4
     //Dado dos strings busca si needle esta dentro de la cadena haystack
-    public static boolean find_needle(String needle, String haystack){ //O(n*m) donde n es la longitud de needle y
+    public static boolean find_needle1(String needle, String haystack){ //O(n*m) donde n es la longitud de needle y
         int needle_index = 0;                                           // m la longitud de haystack
         int haystack_index = 0;
         boolean foundneedle = false;
