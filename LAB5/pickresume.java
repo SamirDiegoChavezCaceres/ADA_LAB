@@ -5,7 +5,7 @@
 package LAB5;
 public class pickresume {
 public static void main(String[] args) {
-	System.out.println(pick_resume("hello"));
+	System.out.println(pick_resume("abrac"));
 }
 public static String pick_resume(String resumes){
     String eliminate = "top";
