@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package LAB7;
-
+import java.util.*;
 /**
  *
  * autor: Chavez Caceres Samir 
@@ -13,13 +13,13 @@ package LAB7;
  *            
  */
 public class ReversePolishNotation {
-    public static void main(String[] args) throws ExceptionIsEmpty {
+    public static void main(String[] args) {
         String[]str = {"10","6","9","3","+","-11","*","/","*","17","+","5","+",};
         System.out.println(reversePolishNotation(str));
     }
 
-    public static String reversePolishNotation(String[] str) throws ExceptionIsEmpty {
-        StackLink<String> stack = new StackLink<String>();
+    public static String reversePolishNotation(String[] str) {
+        Stack<String> stack = new Stack<String>();
         int result, op1, op2, flag;
         result = 0;
         for (String str1 : str) {

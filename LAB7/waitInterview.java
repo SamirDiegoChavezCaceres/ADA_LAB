@@ -14,12 +14,12 @@ import java.util.*;
  *            
  */
 public class waitInterview {
-    public static void main(String[] args) throws ExceptionIsEmpty {
+    public static void main(String[] args) {
         int[]str = {4,-1,5,2,3};
         System.out.println(whatTimeWait(str));
     }
 
-    public static int whatTimeWait(int[] num) throws ExceptionIsEmpty {
+    public static int whatTimeWait(int[] num) {
         Deque<Integer> dq = new ArrayDeque<Integer>();
         for(int i : num){
             dq.addLast(i);

@@ -11,12 +11,12 @@ import java.util.*;
  *            
  */
 public class mergeKList {
-    public static void main(String[] args) throws ExceptionIsEmpty {
+    public static void main(String[] args) {
         int[][]str = {{1,4,5},{1,3,4},{2,6}};
         mergeList(str);
     }
 
-    public static void mergeList(int[][] lists) throws ExceptionIsEmpty {
+    public static void mergeList(int[][] lists) {
        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
         for(int[] list : lists){
             for(int i : list){

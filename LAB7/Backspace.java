@@ -13,12 +13,12 @@ import java.util.*;
  *            
  */
 public class Backspace {
-    public static void main(String[] args) throws ExceptionIsEmpty {
+    public static void main(String[] args) {
         String[]str = {"a","b","c","#","d","e","#","#","f","#","g","h","i","#","j","k","l","m","n","#","o","p","#",};
         System.out.println(backSpace(str));
     }
 
-    public static String backSpace(String[] str) throws ExceptionIsEmpty {
+    public static String backSpace(String[] str) {
         Deque<String> dq = new ArrayDeque<String>();
         String sentence = "";
         for (String str1 : str) {

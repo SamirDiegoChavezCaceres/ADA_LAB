@@ -5,6 +5,8 @@
  */
 package LAB7;
 
+import java.util.Stack;
+
 /**
  *
  * autor: Chavez Caceres Samir 
@@ -13,13 +15,13 @@ package LAB7;
  *            
  */
 public class minParentheses {
-    public static void main(String[] args) throws ExceptionIsEmpty {
+    public static void main(String[] args) {
         String[]str = {"(",")",")",")","(","(",};
         System.out.println(minParenthesesToBeAdd(str));
     }
 
     public static int minParenthesesToBeAdd(String[] str) {
-        StackLink<String> stack = new StackLink<String>();
+        Stack<String> stack = new Stack<String>();
         String aux;
         int len = 0;
         boolean push;
@@ -27,13 +29,13 @@ public class minParentheses {
             push = true;
             if(str1.equals(")")){
                 try {
-                    if((aux = stack.top()) != null)
+                    if((aux = stack.peek()) != null)
                         if(aux.equals("(")){
                             stack.pop();
                             len--;
                             push = false;
                         } 
-                } catch (ExceptionIsEmpty ex) {}
+                } catch (Exception ex) {}
             } 
             if(push){
                 stack.push(str1);
