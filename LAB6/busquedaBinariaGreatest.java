@@ -14,7 +14,7 @@ package LAB6;
 public class busquedaBinariaGreatest {
     public static void main(String[] args){
         int[]a = {5,12,17,23,38,45,77,84,90};
-        System.out.println(busquedaBinariaPrimerMayor(22, a));
+        System.out.println(a[busquedaBinariaPrimerMayor(85, a)]);
     }
     public static int busquedaBinariaPrimerMayor(int target, int[]array){
         int L = 0;
