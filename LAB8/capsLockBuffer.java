@@ -12,7 +12,6 @@ import java.util.*;
  *            
  */
 public class capsLockBuffer {
-    
     public static void main(String[] args) {
         //abc$d@ef$@g$
         String[]str = {"a","b","c","$","d","@","e","f","$","@","g","$",};
