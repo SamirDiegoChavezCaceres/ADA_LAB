@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LAB9;
+package LAB8;
 import java.util.*;
 /**
  * autor: Chavez Caceres Samir 

@@ -1,5 +1,5 @@
 
-package LAB8;
+package LAB7;
 
 import java.util.*;
 
